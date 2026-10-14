@@ -69,7 +69,7 @@ export function Header() {
               : "h-[86px]"
           }`}
         >
-          <a href="#topo" aria-label="CECAB, voltar ao início" className="flex shrink-0 items-center">
+          <a href="/#topo" aria-label="CECAB, voltar ao início" className="flex shrink-0 items-center">
             {scrolled ? (
               <span className="flex items-center gap-2">
                 <img src="/cube.png" alt="" width={44} height={44} className="h-11 w-11" />
@@ -86,7 +86,7 @@ export function Header() {
             {LINKS.map((link) => (
               <a
                 key={link.id}
-                href={`#${link.id}`}
+                href={`/#${link.id}`}
                 aria-current={active === link.id ? "true" : undefined}
                 className={`rounded-full px-4 py-2 text-[13px] font-bold transition-colors ${
                   active === link.id ? "bg-white/15 text-white" : "text-white/80 hover:text-white"
@@ -99,7 +99,7 @@ export function Header() {
 
           <div className="flex items-center gap-2">
             <a
-              href="#contato"
+              href="/#contato"
               className={`hidden rounded-full px-5 py-3 text-[13px] font-extrabold transition-all hover:scale-[1.04] sm:inline-flex ${
                 scrolled ? "bg-orange text-deep" : "bg-white text-deep"
               }`}
@@ -153,7 +153,7 @@ export function Header() {
           {LINKS.map((link) => (
             <a
               key={link.id}
-              href={`#${link.id}`}
+              href={`/#${link.id}`}
               onClick={() => setOpen(false)}
               className="flex items-baseline justify-between border-b border-white/10 py-3 font-display text-[clamp(38px,11vw,60px)] font-semibold uppercase leading-none tracking-[-0.03em] transition-colors hover:text-orange2"
             >
@@ -168,7 +168,7 @@ export function Header() {
             Unidades: {UNIDADES.join(" · ")}
           </p>
           <a
-            href="#contato"
+            href="/#contato"
             onClick={() => setOpen(false)}
             className="mt-4 flex w-full justify-center rounded-full bg-orange py-4 text-[15px] font-extrabold text-deep"
           >

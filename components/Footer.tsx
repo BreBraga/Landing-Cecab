@@ -7,12 +7,12 @@ import {
 import { Logo } from "./ui/Logo";
 
 const LINKS = [
-  { href: "#proposta", label: "Proposta" },
-  { href: "#valores", label: "Valores" },
-  { href: "#jornada", label: "Jornada" },
-  { href: "#estrutura", label: "Estrutura" },
-  { href: "#vida", label: "Vida escolar" },
-  { href: "#unidades", label: "Unidades" },
+  { href: "/#proposta", label: "Proposta" },
+  { href: "/#valores", label: "Valores" },
+  { href: "/#jornada", label: "Jornada" },
+  { href: "/#estrutura", label: "Estrutura" },
+  { href: "/#vida", label: "Vida escolar" },
+  { href: "/#unidades", label: "Unidades" },
 ];
 
 const ROTULO = "text-xs font-extrabold uppercase tracking-[0.14em]";
