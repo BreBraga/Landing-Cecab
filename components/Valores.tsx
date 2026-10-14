@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Foto } from "./ui/Foto";
 import { Reveal } from "./ui/Reveal";
 
 const VALORES = [
@@ -85,6 +86,51 @@ export function Valores() {
             </li>
           ))}
         </ul>
+
+        <Reveal className="mt-16 md:mt-20">
+          <article className="relative grid items-center gap-10 overflow-hidden rounded-[32px] bg-orange p-7 text-deep md:p-12 lg:grid-cols-[1.1fr_1fr]">
+            <span
+              aria-hidden
+              className="absolute -right-16 -top-16 h-[220px] w-[220px] rounded-full border-[40px] border-deep/10"
+            />
+            <div className="relative">
+              <p className="inline-flex items-center gap-2.5 text-xs font-extrabold uppercase tracking-[0.14em]">
+                <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-deep">
+                  <path d="M10 2h4v6h6v4h-6v10h-4V12H4V8h6z" />
+                </svg>
+                Momento de fé
+              </p>
+              <h3 className="mt-4 font-display text-[clamp(64px,10vw,128px)] font-semibold uppercase leading-[0.82] tracking-[-0.05em]">
+                Chapel
+              </h3>
+              <p className="mt-4 font-heading text-[clamp(20px,2.4vw,28px)] font-extrabold leading-tight">
+                Educação com princípios cristãos.
+              </p>
+              <p className="mt-5 max-w-md text-[17px] leading-relaxed">
+                Um momento na rotina da escola para oração, reflexão e conversa
+                sobre a fé, em que os alunos vivem na prática os valores que
+                aprendem.
+              </p>
+            </div>
+
+            <div className="relative mx-auto h-[300px] w-full max-w-[460px] sm:h-[360px]">
+              <div className="absolute left-0 top-0 w-[68%] -rotate-[5deg] rounded-[22px] bg-cream p-2 shadow-[0_22px_40px_rgba(5,46,99,0.3)]">
+                <Foto
+                  src="/fotos/chapel-oracao.webp"
+                  alt="Crianças sentadas em roda, de olhos fechados e mãos juntas, durante momento de oração"
+                  className="aspect-square rounded-[16px] bg-soft"
+                />
+              </div>
+              <div className="absolute bottom-0 right-0 w-[60%] rotate-[4deg] rounded-[22px] bg-cream p-2 shadow-[0_22px_40px_rgba(5,46,99,0.3)]">
+                <Foto
+                  src="/fotos/chapel-oracao-2.webp"
+                  alt="Alunos orando juntos sentados no chão da escola"
+                  className="aspect-square rounded-[16px] bg-soft"
+                />
+              </div>
+            </div>
+          </article>
+        </Reveal>
       </div>
     </section>
   );
